@@ -171,3 +171,14 @@ blockquote a, .prose a, .guia a { color: var(--accent); }
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+
+/* Guía especial: beneficios en dinero del Estado */
+.guias > li.especial { background: #fff8ea; border-left: 4px solid #d52b1e; border-bottom: 1px solid var(--line); padding: 0 16px; margin: 16px 0; }
+.guias .especial .num { display: flex; align-items: center; }
+.guias .especial .tag { display: inline-block; background: #0039a6; color: #fff; font: 600 0.7rem/1 var(--sans); letter-spacing: 0.1em; text-transform: uppercase; padding: 5px 8px; margin-bottom: 8px; }
+.guias .especial .t { font-weight: 600; }
+.guias .especial .cuerpo { padding-left: 60px; }
+.bandera { display: block; width: 36px; height: 24px; flex: none; }
+.h1-bandera { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
+.h1-bandera .bandera { width: 48px; height: 32px; }
+@media (max-width: 640px) { .guias > li.especial { padding: 0 12px; } .guias .especial .cuerpo { padding-left: 0; } .guias .especial .bandera { width: 30px; height: 20px; } }
