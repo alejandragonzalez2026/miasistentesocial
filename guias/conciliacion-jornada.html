@@ -5,84 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Conciliación y jornada · Mi Asistente Social</title>
 <meta name="description" content="Guía corta sobre la Ley 40 horas y la Ley 21.645: horario flexible, teletrabajo y vacaciones para quienes cuidan.">
-<style>
-  :root{--bg:#f7f9fb;--card:#fff;--ink:#1d2a36;--muted:#5b6b7a;--brand:#0b6e8a;--brand-2:#e8f4f7;--line:#dfe6ec}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-  a{color:var(--brand)}
-  header{background:var(--card);border-bottom:1px solid var(--line)}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
-  nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
-  .logo{font-weight:700;font-size:1.15rem;color:var(--brand);text-decoration:none;display:flex;align-items:center;gap:10px}
-  .logo img{height:36px;width:auto;display:block}
-  nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;flex-wrap:wrap}
-  nav ul a{text-decoration:none;color:var(--ink)}
-  .hero{padding:56px 0 40px;background:var(--brand-2)}
-  .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 12px}
-  .hero p{max-width:640px;color:var(--muted);font-size:1.1rem;margin:0 0 20px}
-  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}
-  .hero-img{width:100%;height:auto;border-radius:12px;display:block}
-  @media (max-width:720px){.hero-grid{grid-template-columns:1fr}}
-  .btn{display:inline-block;background:var(--brand);color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none}
-  section{padding:40px 0}
-  h2{font-size:1.5rem;margin:0 0 16px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
-  .card h3{margin:0 0 6px;font-size:1.05rem}
-  .card p{margin:0;color:var(--muted);font-size:.95rem}
-  details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
-  summary{cursor:pointer;font-weight:600}
-  .fuentes li{margin-bottom:6px}
-  footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem;background:var(--card)}
-  .nota{font-size:.85rem;color:var(--muted)}
-  .videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}
-  .videos figure{margin:0}
-  .videos video{width:100%;height:auto;border-radius:12px;display:block;background:#0f2747}
-  .videos figcaption{font-size:.9rem;color:var(--muted);margin-top:6px}
-  .capsula{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:16px}
-  .capsula a.demo{display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;border-radius:999px;background:#FEF3DC;border:1.5px solid #FBB040;color:#163A69;font-weight:700;font-size:14px;line-height:1.2;text-decoration:none}
-  .capsula a.demo span.tag{background:#FBB040;color:#1D2939;border-radius:999px;padding:3px 9px;font-size:11px;letter-spacing:.04em;text-transform:uppercase}
-  .capsula a.ver{display:inline-flex;align-items:center;gap:6px;color:#1F4E8C;font-weight:600;font-size:14px;text-underline-offset:3px}
-  .dos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
-  .dos ul{margin:8px 0 0;padding-left:20px}
-  blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--brand);background:var(--card);color:var(--muted)}
-  .guia{max-width:720px}
-  .guia h1{font-size:clamp(1.6rem,4vw,2.2rem);margin:0 0 8px}
-  .guia .bajada{font-size:1.1rem;color:var(--muted);margin:0 0 24px}
-  .paso{background:var(--card);border:1px solid var(--line);border-left:5px solid var(--brand);border-radius:10px;padding:14px 18px;margin-bottom:14px}
-  .paso h2{font-size:1.15rem;margin:0 0 6px}
-  .paso p,.paso ul{margin:6px 0 0}
-  .paso ul{padding-left:20px}
-  .dato{display:inline-block;background:#FEF3DC;border:1px solid #FBB040;border-radius:6px;padding:0 6px;font-weight:700}
-  .ayuda{background:var(--brand-2);border-radius:10px;padding:16px 18px;margin:24px 0}
-  .volver{display:inline-block;margin:20px 0 0}
-  .acciones{display:flex;align-items:center;gap:8px}
-  .btn-contacto{display:inline-flex;align-items:center;height:44px;padding:0 20px;background:#1d2129;color:#fff;font-weight:600;font-size:.95rem;text-decoration:none}
-  .btn-contacto:hover{background:#3a3f45}
-  .btn-wa{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;color:#fff}
-  .btn-wa:hover{background:#1da851}
-  nav ul{align-items:center}
-</style>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/site.css">
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <nav>
-      <a class="logo" href="../"><img src="../img/logo-hr.png" alt="HR.cl" height="36"><span>Mi Asistente Social</span></a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a href=".././" class="brand" aria-label="Mi Asistente Social, inicio"><img src="../img/logo-hr.svg" alt="HR.cl" width="119" height="56"><span class="word">Mi Asistente<br>Social</span></a>
+    <a href="https://wa.me/56998735037" class="wa wa--bar" target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4z"/></svg></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span class="sr">Menú</span><span class="bars" aria-hidden="true"></span></button>
+    <nav id="menu" class="menu" aria-label="Principal">
       <ul>
+        <li><a href="../#rol">AS en la empresa</a></li>
+        <li><a href="../#app">La App</a></li>
         <li><a href="../#guias">Guías</a></li>
+        <li><a href="../#preguntas">Preguntas frecuentes</a></li>
       </ul>
-      <div class="acciones">
-        <a href="../#contacto" class="btn-contacto">Contáctenos</a>
-        <a href="https://wa.me/56998735037" class="btn-wa" target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4z"/></svg></a>
-      </div>
+      <a href="../#contacto" class="btn">Contáctenos</a>
+      <a href="https://wa.me/56998735037" class="wa wa--menu" target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4z"/></svg></a>
     </nav>
   </div>
 </header>
-
 <main>
-  <section>
-    <div class="wrap guia">
+  <section class="section">
+    <div class="wrap narrow guia guia-page">
+      <span class="eyebrow">Guía 06 de 10</span>
       <h1>Conciliación y jornada</h1>
       <p class="bajada">Hay leyes que te ayudan a compatibilizar el trabajo con tu familia: menos horas de trabajo y más flexibilidad si cuidas a alguien.</p>
 
@@ -122,14 +69,31 @@
         <a href="https://www.mintrab.gob.cl/pgm/CanalRegional/Coquimbo/seremi-del-trabajo-difunde-los-beneficios-de-la-ley-21-645-de-conciliacion-de-la-vida-personal-familiar-y-laboral/" target="_blank" rel="noopener">Ministerio del Trabajo: Ley 21.645</a> ·
         <a href="https://www.bcn.cl/leychile/navegar?i=1199604" target="_blank" rel="noopener">Ley 21.645 en LeyChile</a><br>
         Información revisada el 5 de noviembre de 2026.</p>
-
       <a class="volver" href="../#guias">← Volver a las guías</a>
     </div>
   </section>
 </main>
-
-<footer>
-  <div class="wrap">© 2026 Mi Asistente Social, una App de HR Consultores · miasistentesocial.cl</div>
+<footer class="site-footer">
+  <div class="wrap cols">
+    <div>
+      <a href=".././" class="brand"><img src="../img/logo-hr.svg" alt="HR.cl" width="106" height="50"><span class="word">Mi Asistente<br>Social</span></a>
+      <p style="margin-top:16px;max-width:320px">Atención social para las personas que trabajan en tu empresa y sus familias. Una App de HR Consultores.</p>
+    </div>
+    <div>
+      <h2>Sitio</h2>
+      <ul><li><a href="../#rol">AS en la empresa</a></li><li><a href="../#app">La App</a></li><li><a href="../#guias">Guías</a></li><li><a href="../#preguntas">Preguntas frecuentes</a></li></ul>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <ul><li><a href="mailto:consultores@hr.cl">consultores@hr.cl</a></li><li><a href="tel:+56998735037">+56 9 9873 5037</a></li><li>Av. Kennedy 5600, Oficina 507, Vitacura, Santiago</li><li><a href="https://www.linkedin.com/company/hr-cl" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://wa.me/56998735037" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+    </div>
+  </div>
+  <div class="wrap legal">© 2026 Mi Asistente Social, una App de HR Consultores · miasistentesocial.cl</div>
 </footer>
+<script>
+  (function(){var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');if(!b||!m)return;
+  b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));m.classList.toggle('open',!o);});
+  m.addEventListener('click',function(e){if(e.target.closest('a')){b.setAttribute('aria-expanded','false');m.classList.remove('open');}});})();
+</script>
 </body>
 </html>

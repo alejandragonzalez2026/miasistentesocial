@@ -4,127 +4,75 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Mi Asistente Social</title>
-<meta name="description" content="Orientación de Trabajo Social de empresa para trabajadoras y trabajadores en Chile: licencias médicas, previsión, salud, cuidados y beneficios, con fuentes oficiales.">
-<style>
-  :root{--bg:#f7f9fb;--card:#fff;--ink:#1d2a36;--muted:#5b6b7a;--brand:#0b6e8a;--brand-2:#e8f4f7;--line:#dfe6ec}
-  *{box-sizing:border-box}
-  body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.6}
-  a{color:var(--brand)}
-  header{background:var(--card);border-bottom:1px solid var(--line)}
-  .wrap{max-width:1000px;margin:0 auto;padding:0 16px}
-  nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 0;flex-wrap:wrap}
-  .logo{font-weight:700;font-size:1.15rem;color:var(--brand);text-decoration:none;display:flex;align-items:center;gap:10px}
-  .logo img{height:36px;width:auto;display:block}
-  nav ul{list-style:none;display:flex;gap:18px;margin:0;padding:0;flex-wrap:wrap}
-  nav ul a{text-decoration:none;color:var(--ink)}
-  .hero{padding:56px 0 40px;background:var(--brand-2)}
-  .hero h1{font-size:clamp(1.8rem,4vw,2.6rem);margin:0 0 12px}
-  .hero p{max-width:640px;color:var(--muted);font-size:1.1rem;margin:0 0 20px}
-  .hero-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:32px;align-items:center}
-  .hero-img{width:100%;height:auto;border-radius:12px;display:block}
-  @media (max-width:720px){.hero-grid{grid-template-columns:1fr}}
-  .btn{display:inline-block;background:var(--brand);color:#fff;padding:10px 18px;border-radius:8px;text-decoration:none}
-  section{padding:40px 0}
-  h2{font-size:1.5rem;margin:0 0 16px}
-  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}
-  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px}
-  .card h3{margin:0 0 6px;font-size:1.05rem}
-  .card p{margin:0;color:var(--muted);font-size:.95rem}
-  details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 16px;margin-bottom:10px}
-  summary{cursor:pointer;font-weight:600}
-  .fuentes li{margin-bottom:6px}
-  footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:.9rem;background:var(--card)}
-  .nota{font-size:.85rem;color:var(--muted)}
-  .videos{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:20px}
-  .videos figure{margin:0}
-  .videos video{width:100%;height:auto;border-radius:12px;display:block;background:#0f2747}
-  .videos figcaption{font-size:.9rem;color:var(--muted);margin-top:6px}
-  .capsula{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:16px}
-  .capsula a.demo{display:inline-flex;align-items:center;gap:8px;padding:8px 16px 8px 8px;border-radius:999px;background:#FEF3DC;border:1.5px solid #FBB040;color:#163A69;font-weight:700;font-size:14px;line-height:1.2;text-decoration:none}
-  .capsula a.demo span.tag{background:#FBB040;color:#1D2939;border-radius:999px;padding:3px 9px;font-size:11px;letter-spacing:.04em;text-transform:uppercase}
-  .capsula a.ver{display:inline-flex;align-items:center;gap:6px;color:#1F4E8C;font-weight:600;font-size:14px;text-underline-offset:3px}
-  .dos{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin-top:16px}
-  .dos ul{margin:8px 0 0;padding-left:20px}
-  blockquote{margin:16px 0;padding:10px 16px;border-left:4px solid var(--brand);background:var(--card);color:var(--muted)}
-  .acciones{display:flex;align-items:center;gap:8px}
-  .btn-contacto{display:inline-flex;align-items:center;height:44px;padding:0 20px;background:#1d2129;color:#fff;font-weight:600;font-size:.95rem;text-decoration:none}
-  .btn-contacto:hover{background:#3a3f45}
-  .btn-wa{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;background:#25d366;color:#fff}
-  .btn-wa:hover{background:#1da851}
-  nav ul{align-items:center}
-</style>
+<meta name="description" content="Atención social de empresa para trabajadoras y trabajadores en Chile: licencias médicas, previsión, salud, cuidados y beneficios, con fuentes oficiales.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
 </head>
 <body>
-<header>
-  <div class="wrap">
-    <nav>
-      <a class="logo" href="#"><img src="img/logo-hr.png" alt="HR.cl" height="36"><span>Mi Asistente Social</span></a>
+<header class="site-header">
+  <div class="wrap bar">
+    <a href="./" class="brand" aria-label="Mi Asistente Social, inicio"><img src="img/logo-hr.svg" alt="HR.cl" width="119" height="56"><span class="word">Mi Asistente<br>Social</span></a>
+    <a href="https://wa.me/56998735037" class="wa wa--bar" target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4z"/></svg></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu"><span class="sr">Menú</span><span class="bars" aria-hidden="true"></span></button>
+    <nav id="menu" class="menu" aria-label="Principal">
       <ul>
         <li><a href="#rol">AS en la empresa</a></li>
         <li><a href="#app">La App</a></li>
         <li><a href="#guias">Guías</a></li>
         <li><a href="#preguntas">Preguntas frecuentes</a></li>
       </ul>
-      <div class="acciones">
-        <a href="#contacto" class="btn-contacto">Contáctenos</a>
-        <a href="https://wa.me/56998735037" class="btn-wa" target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4z"/></svg></a>
-      </div>
+      <a href="#contacto" class="btn">Contáctenos</a>
+      <a href="https://wa.me/56998735037" class="wa wa--menu" target="_blank" rel="noopener" aria-label="Escríbanos por WhatsApp" title="WhatsApp"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path fill="currentColor" d="M17.5 14.4c-.3-.1-1.8-.9-2-1-.3-.1-.5-.1-.7.1-.2.3-.8 1-.9 1.2-.2.2-.3.2-.6.1-.3-.1-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.4-.5c.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.8-.7 2-1.4.2-.7.2-1.3.2-1.4-.1-.1-.3-.2-.6-.3zM12 21.8c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4C2.7 15.6 2.2 13.8 2.2 12 2.2 6.6 6.6 2.2 12 2.2c2.6 0 5.1 1 6.9 2.9 1.8 1.8 2.9 4.3 2.9 6.9 0 5.4-4.4 9.8-9.8 9.8zm8.4-18.2C18.1 1.3 15.2 0 12 0 5.4 0 0 5.4 0 12c0 2.1.6 4.2 1.6 6L0 24l6.2-1.6c1.8 1 3.8 1.5 5.8 1.5 6.6 0 12-5.4 12-12 0-3.2-1.3-6.2-3.6-8.4z"/></svg></a>
     </nav>
   </div>
 </header>
-
-<div class="hero">
+<div class="photo-band" style="background-image:url('img/equilibrio-trabajo-vida.jpg');background-position:center 55%" role="img" aria-label="Balanza en equilibrio con las palabras Work y Life"></div>
+<section class="hero">
   <div class="wrap hero-grid">
     <div>
-    <h1>Atención Social al alcance de tu mano</h1>
-    <p>Orientación profesional sobre licencias médicas, previsión, salud, cuidados, beneficios legales y beneficios empresa, problemas personales, familiares y laborales.</p>
-    <a class="btn" href="#guias">Ver guías</a>
+      <span class="eyebrow">Trabajo Social en la empresa · Una App de HR Consultores</span>
+      <h1>Atención Social al alcance de tu mano</h1>
+      <p class="lead">Orientación profesional sobre licencias médicas, previsión, salud, cuidados, beneficios legales y beneficios empresa, problemas personales, familiares y laborales.</p>
+      <div class="actions"><a href="#guias" class="btn">Ver guías</a><a href="#app" class="btn btn--ghost">Conocer la App</a></div>
     </div>
-    <img class="hero-img" src="img/equilibrio-trabajo-vida.jpg" alt="Balanza de madera en equilibrio con las palabras Work y Life, que representa la conciliación entre trabajo y vida personal" width="1200" height="720">
+    <dl class="stats">
+      <div><dt>10</dt><dd>guías con fuentes oficiales</dd></div>
+      <div><dt>24 h</dt><dd>para responder tu consulta</dd></div>
+      <div><dt>$0</dt><dd>costo para ti</dd></div>
+      <div><dt>Audio</dt><dd>o texto para enviar tu consulta</dd></div>
+    </dl>
   </div>
-</div>
+</section>
 
 <main>
-  <section id="rol">
-    <div class="wrap">
-      <h2>Trabajo Social en la empresa</h2>
-      <p>El Trabajo Social se ejerce en municipios, salud, educación, justicia y también en la empresa. Este sitio se enfoca en el Trabajo Social en la empresa, específicamente en las áreas de Recursos Humanos, cuyo foco es el trabajador y su familia.</p>
-      <blockquote>Según la Pontificia Universidad Católica de Chile, quienes se titulan de Trabajo Social pueden desempeñarse “en el área de recursos humanos y dirección de servicios de bienestar en empresas”. <a href="https://admision.uc.cl/htdocs/content/uploads/2021/09/70.-Trabajo-Social.pdf" target="_blank" rel="noopener">Admisión UC, Trabajo Social</a></blockquote>
-      <div class="dos">
-        <div class="card">
-          <h3>Te puede orientar en</h3>
-          <ul>
-            <li>Licencias médicas, rechazos y apelaciones.</li>
-            <li>Maternidad, paternidad, sala cuna y Ley SANNA.</li>
-            <li>Accidentes y enfermedades laborales (Ley 16.744).</li>
-            <li>Conciliación, teletrabajo para cuidadores y jornada de 40 horas.</li>
-            <li>AFP, reforma de pensiones, PGU y Seguro de Cesantía.</li>
-            <li>Caja de Compensación: asignación familiar y créditos.</li>
-            <li>Ley Karin: acoso y violencia en el trabajo.</li>
-            <li>Registro Social de Hogares, vivienda, bonos y presupuesto familiar.</li>
-          </ul>
-        </div>
-        <div class="card">
-          <h3>Lo que no le corresponde</h3>
-          <ul>
-            <li>No te representa legalmente ni reemplaza a la Dirección del Trabajo, la COMPIN o un abogado.</li>
-            <li>No aprueba ni rechaza licencias, beneficios ni pensiones: eso lo resuelve cada organismo.</li>
-            <li>Cuando tu caso lo requiere, te deriva a la institución o especialista que corresponde.</li>
-          </ul>
-        </div>
+  <section class="section" id="rol">
+    <div class="wrap grid-2">
+      <div>
+        <span class="eyebrow">AS en la empresa</span>
+        <h2>Trabajo Social en la empresa</h2>
+        <p class="lead">El Trabajo Social se ejerce en municipios, salud, educación, justicia y también en la empresa. Este sitio se enfoca en el Trabajo Social en la empresa, específicamente en las áreas de Recursos Humanos, cuyo foco es el trabajador y su familia.</p>
+        <blockquote>Según la Pontificia Universidad Católica de Chile, quienes se titulan de Trabajo Social pueden desempeñarse “en el área de recursos humanos y dirección de servicios de bienestar en empresas”. <a href="https://admision.uc.cl/htdocs/content/uploads/2021/09/70.-Trabajo-Social.pdf" target="_blank" rel="noopener">Admisión UC, Trabajo Social</a></blockquote>
+      </div>
+      <div>
+        <h3>Te puede orientar en</h3>
+        <ol class="steps"><li><p>Licencias médicas, rechazos y apelaciones.</p></li><li><p>Maternidad, paternidad, sala cuna y Ley SANNA.</p></li><li><p>Accidentes y enfermedades laborales (Ley 16.744).</p></li><li><p>Conciliación, teletrabajo para cuidadores y jornada de 40 horas.</p></li><li><p>AFP, reforma de pensiones, PGU y Seguro de Cesantía.</p></li><li><p>Caja de Compensación: asignación familiar y créditos.</p></li><li><p>Ley Karin: acoso y violencia en el trabajo.</p></li><li><p>Registro Social de Hogares, vivienda, bonos y presupuesto familiar.</p></li></ol>
+        <h3 style="margin-top:32px">Lo que no le corresponde</h3>
+        <ul class="plain"><li>No te representa legalmente ni reemplaza a la Dirección del Trabajo, la COMPIN o un abogado.</li><li>No aprueba ni rechaza licencias, beneficios ni pensiones: eso lo resuelve cada organismo.</li><li>Cuando tu caso lo requiere, te deriva a la institución o especialista que corresponde.</li></ul>
       </div>
     </div>
   </section>
 
-  <section id="app">
-    <div class="wrap">
-      <h2>¿Qué es la App Mi Asistente Social?</h2>
-      <p>Mi Asistente Social es una App de HR Consultores: un equipo de asistentes sociales, psicólogas y psicólogos al servicio de las personas que trabajan en tu empresa. Es un beneficio que entrega tu empleador, sin costo para ti.</p>
-      <div class="dos">
-        <div class="card"><h3>Enviar tu consulta</h3><p>Graba un audio o escribe lo que te pasa. Una profesional lo revisa y te responde en menos de 24 horas.</p></div>
-        <div class="card"><h3>Pedir hora</h3><p>Agenda en un minuto una atención en tu lugar de trabajo o por videollamada. No necesitas saber a qué área corresponde tu problema.</p></div>
+  <section class="section section--soft" id="app">
+    <div class="wrap grid-2">
+      <div>
+        <span class="eyebrow">La App</span>
+        <h2>¿Qué es la App Mi Asistente Social?</h2>
+        <p class="lead">Mi Asistente Social es una App de HR Consultores: un equipo de asistentes sociales, psicólogas y psicólogos al servicio de las personas que trabajan en tu empresa. Es un beneficio que entrega tu empleador, sin costo para ti.</p>
+        <p class="nota">Para entrar, tu empresa debe haberte incluido en el servicio. Ingresas con tu RUT y activas la App con un código que llega por SMS a tu celular.</p>
       </div>
-      <p class="nota">Para entrar, tu empresa debe haberte incluido en el servicio. Ingresas con tu RUT y activas la App con un código que llega por SMS a tu celular.</p>
+      <ol class="steps"><li><h3>Enviar tu consulta</h3><p>Graba un audio o escribe lo que te pasa. Una profesional lo revisa y te responde en menos de 24 horas.</p></li><li><h3>Pedir hora</h3><p>Agenda en un minuto una atención en tu lugar de trabajo o por videollamada. No necesitas saber a qué área corresponde tu problema.</p></li></ol>
+    </div>
+    <div class="wrap">
       <div class="capsula">
         <a class="demo" href="ENLACE_DEMO" target="_blank" rel="noopener"><span class="tag">Nuevo</span>Conoce Mi Asistente Social · Probar la demo <span aria-hidden="true">→</span></a>
         <a class="ver" href="#videos"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1F4E8C"/><path d="M10 8l6 4-6 4z" fill="#fff"/></svg>Ver presentación (2 min)</a>
@@ -143,39 +91,552 @@
     </div>
   </section>
 
-  <section id="guias">
+  <section class="section" id="guias">
     <div class="wrap">
-      <h2>Guías informativas</h2>
-      <div class="grid">
-        <a class="card" href="guias/licencias-medicas.html" style="text-decoration:none;color:inherit"><h3>Licencias médicas</h3><p>Cómo funcionan, plazos y pago del subsidio.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/maternidad-paternidad-cuidados.html" style="text-decoration:none;color:inherit"><h3>Maternidad, paternidad y cuidados</h3><p>Pre y posnatal, sala cuna y Ley SANNA.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/accidentes-enfermedades-laborales.html" style="text-decoration:none;color:inherit"><h3>Accidentes y enfermedades laborales</h3><p>Seguro de la Ley 16.744 y rol de la mutualidad.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/caja-de-compensacion.html" style="text-decoration:none;color:inherit"><h3>Caja de Compensación</h3><p>Asignación familiar, créditos sociales y beneficios.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/prevision-cesantia.html" style="text-decoration:none;color:inherit"><h3>Previsión y cesantía</h3><p>AFP, reforma de pensiones (Ley 21.735), Seguro de Cesantía y Pensión Garantizada Universal.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/conciliacion-jornada.html" style="text-decoration:none;color:inherit"><h3>Conciliación y jornada</h3><p>Ley 21.645 (teletrabajo para cuidadores, vacaciones en receso escolar) y Ley 40 horas.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/ley-karin.html" style="text-decoration:none;color:inherit"><h3>Ambiente laboral</h3><p>Ley Karin: prevención y denuncia del acoso laboral y sexual.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/salud-bienestar.html" style="text-decoration:none;color:inherit"><h3>Salud y bienestar</h3><p>Fonasa, Isapre, GES y apoyo en salud mental.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/vivienda-beneficios.html" style="text-decoration:none;color:inherit"><h3>Vivienda y beneficios del Estado</h3><p>Registro Social de Hogares, subsidios y bonos.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
-        <a class="card" href="guias/finanzas-personales.html" style="text-decoration:none;color:inherit"><h3>Finanzas personales</h3><p>Orientación sobre endeudamiento y presupuesto familiar.</p><p style="color:var(--brand);font-weight:600;margin-top:8px">Leer guía →</p></a>
+      <div class="head">
+        <span class="eyebrow">Guías informativas</span>
+        <h2>Lo que necesitas saber, en pocos pasos</h2>
+        <p class="lead">Toca un tema para abrir su guía. Cada una usa información de fuentes oficiales e indica su fecha de revisión.</p>
       </div>
-      <p class="nota">Cada guía usa información de fuentes oficiales e indica su fecha de revisión.</p>
+      <ol class="guias">
+        <li id="licencias-medicas"><details>
+          <summary><span class="num">01</span><span><span class="t">Licencias médicas</span><span class="d">Cómo funcionan, plazos y pago del subsidio.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Si estás enfermo, la licencia te da permiso para no trabajar. Mientras dura, recibes un pago llamado <strong>subsidio</strong>, que reemplaza tu sueldo.</p>
+
+      <div class="paso">
+        <h2>1. Entrégala a tiempo</h2>
+        <p>Tienes <span class="dato">2 días hábiles</span> desde que empieza tu reposo (en el sector público, 3). Si la entregas tarde, te la pueden rechazar.</p>
+      </div>
+
+      <div class="paso">
+        <h2>2. Tu empleador la envía</h2>
+        <p>La empresa tiene <span class="dato">3 días hábiles</span> para enviarla a la COMPIN (si eres de Fonasa), a la Caja de Compensación o a tu Isapre. Si la empresa se atrasa, igual te pagan.</p>
+      </div>
+
+      <div class="paso">
+        <h2>3. ¿Desde qué día te pagan?</h2>
+        <ul>
+          <li>Licencia de <strong>11 días o más</strong>: te pagan desde el primer día.</li>
+          <li>Licencia de <strong>10 días o menos</strong>: te pagan desde el cuarto día. Los 3 primeros no se pagan.</li>
+          <li>Si tienes licencias seguidas por la misma enfermedad y suman más de 10 días, te pagan desde el primer día.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>4. ¿Cuándo llega el pago?</h2>
+        <p>La primera licencia se paga dentro de <span class="dato">30 días</span> desde que la reciben. Si sigues con licencia, te pagan con la misma frecuencia que tu sueldo.</p>
+      </div>
+
+      <div class="paso">
+        <h2>5. ¿Te la rechazaron o rebajaron?</h2>
+        <ul>
+          <li><strong>Isapre:</strong> apela a la COMPIN dentro de <span class="dato">15 días hábiles</span> desde que te llega la carta.</li>
+          <li><strong>Fonasa:</strong> reclama a la Superintendencia de Seguridad Social (SUSESO). Hazlo pronto: el pago se pierde 6 meses después de que termina la licencia.</li>
+          <li>Reclama en <a href="https://www.suseso.gob.cl" target="_blank" rel="noopener">suseso.gob.cl</a> con tu ClaveÚnica, en la app SUSESO Contigo o en ChileAtiende. Lleva tu carnet y la carta del rechazo.</li>
+        </ul>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te ayuda a revisar tu caso y a preparar tu reclamo.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://www.chileatiende.gob.cl/fichas/9620" target="_blank" rel="noopener">ChileAtiende: licencia fuera de plazo</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/3982" target="_blank" rel="noopener">ChileAtiende: reclamar el subsidio</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-article-19094.html" target="_blank" rel="noopener">SUSESO: plazo del empleador</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-article-19931.html" target="_blank" rel="noopener">SUSESO: desde qué día se paga</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-article-19934.html" target="_blank" rel="noopener">SUSESO: plazo de pago</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-article-19227.html" target="_blank" rel="noopener">SUSESO: apelar si eres de Isapre</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-article-19226.html" target="_blank" rel="noopener">SUSESO: apelar si eres de Fonasa</a><br>
+        Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/licencias-medicas.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="maternidad-paternidad-cuidados"><details>
+          <summary><span class="num">02</span><span><span class="t">Maternidad, paternidad y cuidados</span><span class="d">Pre y posnatal, sala cuna y Ley SANNA.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Si vas a tener un hijo o tienes un hijo enfermo, la ley te da permisos pagados para cuidarlo. Aquí van los más importantes.</p>
+
+      <div class="paso">
+        <h2>1. Prenatal y postnatal (madre)</h2>
+        <ul>
+          <li><strong>Prenatal:</strong> <span class="dato">6 semanas</span> antes del parto.</li>
+          <li><strong>Postnatal:</strong> <span class="dato">12 semanas</span> después del parto. Son 18 semanas si el bebé nace antes de la semana 33 o pesa menos de 1.500 gramos.</li>
+          <li>Mientras dura, recibes un pago (subsidio) en vez de tu sueldo.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>2. Postnatal parental</h2>
+        <p>Después del postnatal tienes <span class="dato">12 semanas más</span> a jornada completa, o 18 semanas si vuelves a media jornada. Desde la semana 7 puedes traspasar semanas al padre. Para eso, avisa a tu empleador con al menos 10 días de anticipación.</p>
+      </div>
+
+      <div class="paso">
+        <h2>3. Permiso del padre</h2>
+        <p>El padre tiene <span class="dato">5 días pagados</span> por el nacimiento de su hijo. Puede tomarlos seguidos desde el parto o repartirlos dentro del primer mes.</p>
+      </div>
+
+      <div class="paso">
+        <h2>4. Fuero: no te pueden despedir</h2>
+        <p>La madre tiene fuero desde que empieza el embarazo hasta <span class="dato">1 año</span> después del postnatal. El padre que usa semanas del postnatal parental también tiene fuero por un tiempo.</p>
+      </div>
+
+      <div class="paso">
+        <h2>5. Sala cuna y alimentación</h2>
+        <ul>
+          <li>Si en tu empresa trabajan <strong>20 o más mujeres</strong>, el empleador debe darte sala cuna para tu hijo menor de 2 años.</li>
+          <li>Con un hijo menor de 2 años, tienes derecho a <span class="dato">1 hora al día</span> para alimentarlo.</li>
+          <li>Hay un proyecto de ley de sala cuna universal en el Congreso. Cuando sea ley, actualizaremos esta guía.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>6. Ley SANNA: hijo con enfermedad grave</h2>
+        <p>Si tu hijo tiene cáncer, un trasplante, un accidente grave, está en fase terminal o en UCI, puedes pedir una licencia médica para acompañarlo, y te pagan un subsidio.</p>
+        <ul>
+          <li>Necesitas al menos 8 cotizaciones en los últimos 24 meses, y las 3 últimas seguidas.</li>
+          <li>Pide la licencia al médico de tu hijo y entrégala a tu empleador en <span class="dato">2 días hábiles</span>.</li>
+        </ul>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te ayuda a calcular tus fechas y a hacer los trámites.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://www.chileatiende.gob.cl/fichas/8647" target="_blank" rel="noopener">ChileAtiende: pre y postnatal</a> ·
+        <a href="https://dt.gob.cl/portal/1628/w3-article-93859.html" target="_blank" rel="noopener">Dirección del Trabajo: permiso del padre</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/35516" target="_blank" rel="noopener">ChileAtiende: sala cuna y alimentación</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/53276" target="_blank" rel="noopener">ChileAtiende: Ley SANNA</a><br>
+        Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/maternidad-paternidad-cuidados.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="accidentes-enfermedades-laborales"><details>
+          <summary><span class="num">03</span><span><span class="t">Accidentes y enfermedades laborales</span><span class="d">Seguro de la Ley 16.744 y rol de la mutualidad.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Si te accidentas trabajando, camino al trabajo o te enfermas por tu trabajo, tienes un seguro que te cubre. Es la <strong>Ley 16.744</strong> y no te cuesta nada: lo paga tu empleador.</p>
+
+      <div class="paso">
+        <h2>1. ¿Qué cubre?</h2>
+        <ul>
+          <li><strong>Accidente del trabajo:</strong> te pasa mientras trabajas.</li>
+          <li><strong>Accidente de trayecto:</strong> te pasa en el camino directo entre tu casa y el trabajo.</li>
+          <li><strong>Enfermedad profesional:</strong> te enfermas por las tareas que haces en tu trabajo.</li>
+        </ul>
+        <p>Te cubre aunque tu empleador no haya pagado el seguro.</p>
+      </div>
+
+      <div class="paso">
+        <h2>2. Si te accidentas</h2>
+        <ul>
+          <li>Avisa <strong>de inmediato</strong> a tu jefatura.</li>
+          <li>Ve a la mutual de tu empresa (ACHS, Mutual de Seguridad o IST) o al ISL. Si no sabes cuál es, pregunta en Recursos Humanos.</li>
+          <li>Si fue de trayecto, dilo al llegar: "es un accidente de trayecto".</li>
+          <li>Si es grave, puedes ir al centro de salud más cercano.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>3. La denuncia (DIAT)</h2>
+        <p>Tu empleador debe denunciar el accidente en <span class="dato">24 horas</span> y darte una copia. Si no lo hace, puedes hacerlo tú, tu familia o el Comité Paritario.</p>
+      </div>
+
+      <div class="paso">
+        <h2>4. ¿Qué recibes?</h2>
+        <ul>
+          <li>Atención médica, remedios, exámenes y traslados <strong>gratis</strong>.</li>
+          <li>Un pago (subsidio) que reemplaza tu sueldo mientras no puedes trabajar.</li>
+          <li>Si quedas con secuelas, puedes recibir una indemnización o una pensión.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>5. ¿No están de acuerdo contigo?</h2>
+        <p>Si la mutual dice que tu caso no es laboral o no estás de acuerdo con lo que resolvió, puedes reclamar en la Superintendencia de Seguridad Social (SUSESO), en <a href="https://www.suseso.gob.cl" target="_blank" rel="noopener">suseso.gob.cl</a> con tu ClaveÚnica.</p>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te orienta sobre cómo hacer la denuncia y te acompaña en el proceso.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://www.chileatiende.gob.cl/fichas/7750" target="_blank" rel="noopener">ChileAtiende: seguro Ley 16.744</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-article-19831.html" target="_blank" rel="noopener">SUSESO: qué hacer ante un accidente del trabajo</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-article-625959.html" target="_blank" rel="noopener">SUSESO: accidente de trayecto</a><br>
+        Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/accidentes-enfermedades-laborales.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="caja-de-compensacion"><details>
+          <summary><span class="num">04</span><span><span class="t">Caja de Compensación</span><span class="d">Asignación familiar, créditos sociales y beneficios.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Si tu empresa está afiliada a una Caja de Compensación (Los Andes, La Araucana, Los Héroes o 18 de Septiembre), tú también lo estás. La Caja paga beneficios, da créditos y ofrece actividades para ti y tu familia.</p>
+
+      <div class="paso">
+        <h2>1. ¿Cuál es mi Caja?</h2>
+        <p>Pregunta en Recursos Humanos o revisa tu liquidación de sueldo. No tienes que hacer nada para afiliarte: entras por tu empresa.</p>
+      </div>
+
+      <div class="paso">
+        <h2>2. Asignación familiar</h2>
+        <p>Es un pago mensual por cada carga que tengas inscrita (hijos hasta 18 años, o hasta 24 si estudian; cónyuge; padres mayores de 65, entre otros). Te la paga tu empleador junto con el sueldo. El monto depende de lo que ganas:</p>
+        <ul>
+          <li>Ganas hasta $649.039: <span class="dato">$22.601</span> por carga.</li>
+          <li>De $649.040 a $947.990: <span class="dato">$13.870</span> por carga.</li>
+          <li>De $947.991 a $1.478.539: <span class="dato">$4.382</span> por carga.</li>
+          <li>Más de $1.478.539: no recibes el pago, pero tus cargas sí tienen otros beneficios.</li>
+        </ul>
+        <p>Si no la estás recibiendo, puedes pedir el pago hacia atrás, hasta <strong>5 años</strong>.</p>
+      </div>
+
+      <div class="paso">
+        <h2>3. Créditos sociales: cuidado con la cuota</h2>
+        <p>La Caja te puede prestar plata y la cuota se descuenta de tu sueldo. La ley pone un límite: la cuota no puede pasar del <span class="dato">25%</span> de tu sueldo líquido (si ganas el mínimo o más). Antes de firmar, compara el <strong>costo total del crédito</strong>, no solo la cuota.</p>
+      </div>
+
+      <div class="paso">
+        <h2>4. Otros beneficios</h2>
+        <p>Las Cajas ofrecen bonos, actividades deportivas, culturales y recreativas, y apoyo social. Revisa la página de tu Caja o pregunta en Recursos Humanos.</p>
+      </div>
+
+      <div class="paso">
+        <h2>5. ¿Tienes un problema con la Caja?</h2>
+        <p>Primero reclama en tu Caja. Si no te responden bien, reclama en la Superintendencia de Seguridad Social (SUSESO), en <a href="https://www.suseso.gob.cl" target="_blank" rel="noopener">suseso.gob.cl</a>.</p>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te ayuda a inscribir tus cargas y a revisar si un crédito te conviene.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://www.chileatiende.gob.cl/fichas/25878" target="_blank" rel="noopener">ChileAtiende: asignación familiar</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-propertyvalue-584.html" target="_blank" rel="noopener">SUSESO: crédito social</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-propertyvalue-583.html" target="_blank" rel="noopener">SUSESO: prestaciones adicionales</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-article-19887.html" target="_blank" rel="noopener">SUSESO: dónde reclamar</a><br>
+        Montos de asignación familiar según ChileAtiende (actualizado el 23 de junio de 2026). Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/caja-de-compensacion.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="prevision-cesantia"><details>
+          <summary><span class="num">05</span><span><span class="t">Previsión y cesantía</span><span class="d">AFP, reforma de pensiones (Ley 21.735), Seguro de Cesantía y Pensión Garantizada Universal.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Lo que se descuenta de tu sueldo para tu jubilación y para cuando te quedas sin trabajo es tu plata. Aquí te contamos cómo cuidarla y cuándo puedes usarla.</p>
+
+      <div class="paso">
+        <h2>1. Revisa que te estén cotizando</h2>
+        <p>Entra a la página de tu AFP con tu ClaveÚnica y revisa tu cartola. Cada mes debe aparecer una cotización. Si falta alguna, avisa a Recursos Humanos: los meses sin cotizar (lagunas) bajan tu pensión.</p>
+      </div>
+
+      <div class="paso">
+        <h2>2. Reforma de pensiones (Ley 21.735)</h2>
+        <ul>
+          <li>Tu empleador ahora pone un <strong>aporte extra</strong> para tu pensión. Desde agosto de 2026 es <span class="dato">3,5%</span> de tu sueldo, y subirá poco a poco hasta 8,5% en 2033.</li>
+          <li>Este aporte lo paga la empresa: <strong>no se descuenta de tu sueldo</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>3. Seguro de Cesantía (AFC)</h2>
+        <p>Si te despiden o termina tu contrato, puedes cobrarlo. Necesitas:</p>
+        <ul>
+          <li>Contrato indefinido: al menos <span class="dato">10 cotizaciones</span>.</li>
+          <li>Contrato a plazo fijo o por obra: al menos <span class="dato">5 cotizaciones</span>.</li>
+        </ul>
+        <p>Pídelo en la Sucursal Virtual de <a href="https://www.afc.cl" target="_blank" rel="noopener">afc.cl</a> con tu ClaveÚnica, o en una sucursal de AFC. Lleva tu carnet y tu finiquito o carta de despido.</p>
+      </div>
+
+      <div class="paso">
+        <h2>4. Si tu cuenta no alcanza: Fondo Solidario</h2>
+        <p>Si tienes poca plata en tu cuenta de cesantía, el Fondo de Cesantía Solidario te puede completar hasta <span class="dato">5 pagos</span>. Necesitas 10 cotizaciones en los últimos 24 meses, y las 3 últimas con el mismo empleador.</p>
+      </div>
+
+      <div class="paso">
+        <h2>5. Pensión Garantizada Universal (PGU)</h2>
+        <ul>
+          <li>Es para personas de <strong>65 años o más</strong>, aunque sigan trabajando.</li>
+          <li>Hoy el monto es de hasta <span class="dato">$231.732</span>. Desde los 75 años sube a $250.275.</li>
+          <li>Se pide en ChileAtiende, en tu AFP o en <a href="https://www.chileatiende.gob.cl" target="_blank" rel="noopener">chileatiende.gob.cl</a> con tu ClaveÚnica.</li>
+        </ul>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te ayuda a revisar tus cotizaciones y a pedir tus beneficios.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://previsionsocial.gob.cl/empleadores-nueva-cotizacion-establecida-en-la-reforma-de-pensiones-rige-a-partir-de-la-remuneracion-de-agosto-de-2025/" target="_blank" rel="noopener">Subsecretaría de Previsión Social: aporte del empleador</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/130987" target="_blank" rel="noopener">ChileAtiende: aportes del empleador</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/62932" target="_blank" rel="noopener">ChileAtiende: Seguro de Cesantía</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/36646" target="_blank" rel="noopener">ChileAtiende: Fondo de Cesantía Solidario</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/102077" target="_blank" rel="noopener">ChileAtiende: PGU</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/130457" target="_blank" rel="noopener">ChileAtiende: aumento de la PGU</a><br>
+        Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/prevision-cesantia.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="conciliacion-jornada"><details>
+          <summary><span class="num">06</span><span><span class="t">Conciliación y jornada</span><span class="d">Ley 21.645 (teletrabajo para cuidadores, vacaciones en receso escolar) y Ley 40 horas.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Hay leyes que te ayudan a compatibilizar el trabajo con tu familia: menos horas de trabajo y más flexibilidad si cuidas a alguien.</p>
+
+      <div class="paso">
+        <h2>1. Ley 40 horas: tu jornada baja</h2>
+        <ul>
+          <li>Desde abril de <strong>2026</strong>, la jornada máxima es de <span class="dato">42 horas</span> a la semana.</li>
+          <li>En abril de <strong>2028</strong> llegará a <span class="dato">40 horas</span>.</li>
+          <li>Puedes cambiar horas extra por días de vacaciones, hasta 5 días al año.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>2. Si tienes hijos de hasta 12 años</h2>
+        <p>Puedes entrar <span class="dato">hasta 1 hora antes o después</span>, y salir antes o después en la misma medida. Por ejemplo, si trabajas de 9:00 a 17:00, puedes trabajar de 8:00 a 16:00. Entrega a tu empleador el certificado de nacimiento de tu hijo.</p>
+      </div>
+
+      <div class="paso">
+        <h2>3. Teletrabajo si cuidas a alguien</h2>
+        <p>Si cuidas a un niño <strong>menor de 14 años</strong>, a una persona con discapacidad o a alguien en situación de dependencia, puedes pedir trabajar desde la casa todo o parte de la jornada, si tu trabajo lo permite (Ley 21.645).</p>
+      </div>
+
+      <div class="paso">
+        <h2>4. Vacaciones en las vacaciones del colegio</h2>
+        <p>Si cuidas a un niño menor de 14 años, tienes <strong>preferencia</strong> para tomar tus vacaciones cuando tu hijo está de vacaciones del colegio. Pídelo con <span class="dato">30 días</span> de anticipación.</p>
+      </div>
+
+      <div class="paso">
+        <h2>5. Cambiar turnos o tu horario</h2>
+        <p>Si cuidas a alguien, también puedes pedir un cambio temporal de turno o de horario. Pídelo con 30 días de anticipación y acredita que cuidas a esa persona (certificado de nacimiento, Registro Nacional de Discapacidad o registro de cuidador).</p>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te ayuda a reunir los documentos y a hacer la solicitud.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://www.mintrab.gob.cl/ley-40-horas-madres-y-padres-de-ninos-menores-de-12-anos-podran-adelantar-o-retrasar-el-ingreso-al-trabajo/" target="_blank" rel="noopener">Ministerio del Trabajo: Ley 40 horas</a> ·
+        <a href="https://www.mintrab.gob.cl/pgm/CanalRegional/Coquimbo/seremi-del-trabajo-difunde-los-beneficios-de-la-ley-21-645-de-conciliacion-de-la-vida-personal-familiar-y-laboral/" target="_blank" rel="noopener">Ministerio del Trabajo: Ley 21.645</a> ·
+        <a href="https://www.bcn.cl/leychile/navegar?i=1199604" target="_blank" rel="noopener">Ley 21.645 en LeyChile</a><br>
+        Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/conciliacion-jornada.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="ley-karin"><details>
+          <summary><span class="num">07</span><span><span class="t">Ambiente laboral</span><span class="d">Ley Karin: prevención y denuncia del acoso laboral y sexual.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Nadie tiene que aguantar malos tratos en el trabajo. La Ley Karin (Ley 21.643) protege a trabajadoras y trabajadores del acoso y la violencia, y obliga a la empresa a actuar.</p>
+
+      <div class="paso">
+        <h2>1. ¿Qué cubre?</h2>
+        <ul>
+          <li><strong>Acoso laboral:</strong> agresiones, hostigamiento, humillaciones o malos tratos de tu jefatura o de compañeros. Puede pasar una sola vez o repetirse.</li>
+          <li><strong>Acoso sexual:</strong> insinuaciones o peticiones sexuales que no aceptaste.</li>
+          <li><strong>Violencia de terceros:</strong> agresiones de clientes, usuarios o proveedores mientras trabajas.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>2. ¿Dónde denuncio?</h2>
+        <p>Puedes denunciar <strong>de palabra o por escrito</strong>:</p>
+        <ul>
+          <li>En tu empresa, por el canal que indica el protocolo de la Ley Karin.</li>
+          <li>O directamente en la Inspección del Trabajo, o en <a href="https://www.dt.gob.cl" target="_blank" rel="noopener">dt.gob.cl</a>.</li>
+        </ul>
+        <p>Anota fechas, qué pasó y quiénes lo vieron. Guarda mensajes o correos.</p>
+      </div>
+
+      <div class="paso">
+        <h2>3. La empresa debe protegerte de inmediato</h2>
+        <p>Apenas denuncias, la empresa debe tomar <strong>medidas de resguardo</strong>, como separarte de la persona denunciada o cambiar horarios. Tu denuncia debe tratarse con reserva y respeto.</p>
+      </div>
+
+      <div class="paso">
+        <h2>4. Plazos de la investigación</h2>
+        <ul>
+          <li>La investigación debe terminar en <span class="dato">30 días</span>.</li>
+          <li>Después, la Inspección del Trabajo tiene 30 días para revisarla.</li>
+          <li>Luego la empresa tiene <span class="dato">15 días</span> para aplicar las medidas o sanciones.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>5. Apoyo psicológico</h2>
+        <p>Si denunciaste, puedes recibir <strong>atención psicológica temprana</strong> en la mutual de tu empresa (ACHS, Mutual de Seguridad o IST) o en el ISL.</p>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te escucha con reserva, te explica el protocolo y te acompaña si decides denunciar.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://isl.gob.cl/wp-content/uploads/2024/08/CARTILLA-PREVENTIVA-LEY-KARIN.pdf" target="_blank" rel="noopener">ISL: cartilla Ley Karin</a> ·
+        <a href="https://www.suseso.gob.cl/605/w3-article-733662.html" target="_blank" rel="noopener">SUSESO: reglamento de la Ley Karin</a> ·
+        <a href="https://www.mintrab.gob.cl/contraloria-toma-razon-del-reglamento-de-la-ley-karin-que-establece-directrices-para-investigaciones-de-acoso-sexual-laboral-y-violencia-laboral/" target="_blank" rel="noopener">Ministerio del Trabajo: reglamento</a><br>
+        Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/ley-karin.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="salud-bienestar"><details>
+          <summary><span class="num">08</span><span><span class="t">Salud y bienestar</span><span class="d">Fonasa, Isapre, GES y apoyo en salud mental.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Tu cotización de salud (7% de tu sueldo) va a Fonasa o a una Isapre. Conocer tus derechos te ayuda a atenderte mejor y a pagar menos.</p>
+
+      <div class="paso">
+        <h2>1. Fonasa: atención gratis en la red pública</h2>
+        <p>Todas las personas de Fonasa tienen <strong>copago cero</strong> en consultorios y hospitales públicos. Tu tramo depende de tu sueldo:</p>
+        <ul>
+          <li><strong>Tramo B:</strong> ganas hasta $529.000.</li>
+          <li><strong>Tramo C:</strong> ganas entre $529.001 y $772.340.</li>
+          <li><strong>Tramo D:</strong> ganas más de $772.340.</li>
+          <li>Si tienes 3 o más cargas, bajas un tramo. Desde el tramo B puedes comprar bonos para atenderte en clínicas en convenio.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>2. GES: 90 enfermedades con garantías</h2>
+        <p>Si tienes una de las <span class="dato">90 enfermedades GES</span> (como diabetes, hipertensión, cáncer o depresión), tienes derecho a atención en un plazo máximo y con un costo conocido, seas de Fonasa o Isapre.</p>
+        <ul>
+          <li>Pide a tu médico el <strong>Formulario de Constancia GES</strong>.</li>
+          <li>Atiéndete en el lugar que te indiquen para no perder la garantía.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>3. ¿No te atendieron a tiempo por GES?</h2>
+        <ul>
+          <li>Reclama en tu Fonasa o Isapre dentro de <span class="dato">30 días</span>. Deben darte otro lugar donde atenderte.</li>
+          <li>Si no lo hacen, reclama en la Superintendencia de Salud dentro de 15 días: 600 836 9000.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>4. Salud mental: no estás solo</h2>
+        <ul>
+          <li><strong>Salud Responde:</strong> <a href="tel:6003607777">600 360 7777</a>, las 24 horas. Orientación y contención.</li>
+          <li><strong>Prevención del suicidio:</strong> <a href="tel:*4141">*4141</a> desde tu celular, gratis, las 24 horas.</li>
+          <li><strong>Violencia contra la mujer:</strong> <a href="tel:1455">1455</a>, gratis y confidencial.</li>
+          <li>Si hay peligro inmediato, llama al <strong>SAMU 131</strong>.</li>
+        </ul>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te orienta para activar tu GES, revisar tu plan de salud y buscar apoyo psicológico.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://www.superdesalud.gob.cl/preguntas-frecuentes/como-se-clasifican-los-beneficiarios-de-fonasa-segun-su-tramo/" target="_blank" rel="noopener">Superintendencia de Salud: tramos de Fonasa</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/9793" target="_blank" rel="noopener">ChileAtiende: copago cero</a> ·
+        <a href="https://www.superdesalud.gob.cl/noticias/2026/10/mas-de-62-millones-de-casos-ges-desde-2005-salud-presenta-cifras-actualizadas-y-llama-a-ejercer-las-garantias/" target="_blank" rel="noopener">Superintendencia de Salud: GES (octubre 2026)</a> ·
+        <a href="https://www.isl.gob.cl/wp-content/uploads/2026/01/5-FICHA-LI%CC%81NEAS-CONTACTOS-Y-SERVICIOS-DE-APOYO-EN-SALUD-MENTAL-EN-CHILE.pdf" target="_blank" rel="noopener">ISL: líneas de apoyo en salud mental</a><br>
+        Tramos de Fonasa según la Superintendencia de Salud (montos de julio de 2025). Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/salud-bienestar.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="vivienda-beneficios"><details>
+          <summary><span class="num">09</span><span><span class="t">Vivienda y beneficios del Estado</span><span class="d">Registro Social de Hogares, subsidios y bonos.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Para recibir casi cualquier ayuda del Estado (subsidios de vivienda, bonos o becas) necesitas estar en el Registro Social de Hogares. Aquí te contamos cómo partir.</p>
+
+      <div class="paso">
+        <h2>1. Inscríbete en el Registro Social de Hogares</h2>
+        <ul>
+          <li>Hazlo en <a href="https://www.registrosocial.gob.cl" target="_blank" rel="noopener">registrosocial.gob.cl</a> con tu ClaveÚnica, o en el departamento social de tu municipalidad con tu carnet.</li>
+          <li>Te asignan un tramo (por ejemplo, 40%, 60% o 70%). Mientras más bajo el tramo, más beneficios puedes recibir.</li>
+          <li>Puedes descargar tu <strong>Cartola Hogar</strong> para ver tu tramo.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>2. Mantén tus datos al día</h2>
+        <p>Si cambia algo en tu casa (alguien llega o se va, cambian tus ingresos o te cambias de domicilio), actualízalo en el Registro. Si tus datos están mal, puedes perder beneficios.</p>
+      </div>
+
+      <div class="paso">
+        <h2>3. Subsidio para comprar o construir (DS1)</h2>
+        <ul>
+          <li>Es para familias de sectores medios que tienen ahorro.</li>
+          <li>Necesitas estar en el Registro y tener una cuenta de ahorro para la vivienda con al menos <span class="dato">12 meses</span> de antigüedad.</li>
+          <li>Para comprar, el ahorro mínimo va de <span class="dato">30 a 80 UF</span>, según tu tramo.</li>
+          <li>El Minvu abre postulaciones una o dos veces al año. Revisa las fechas en <a href="https://www.minvu.gob.cl" target="_blank" rel="noopener">minvu.gob.cl</a>.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>4. Subsidio de arriendo (DS52)</h2>
+        <ul>
+          <li>Te ayuda a pagar el arriendo cada mes, con hasta <span class="dato">4,2 UF</span> al mes (varía según región).</li>
+          <li>Necesitas estar dentro del <strong>70%</strong> del Registro, tener un ingreso familiar de entre 7 y 25 UF y al menos <strong>4 UF</strong> ahorradas.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>5. Revisa qué bonos te corresponden</h2>
+        <p>Entra a <a href="https://www.chileatiende.gob.cl" target="_blank" rel="noopener">chileatiende.gob.cl</a> con tu ClaveÚnica y revisa tus beneficios. Por ejemplo, si recibes asignación familiar, también recibes el <strong>Aporte Familiar Permanente</strong> (Bono Marzo) por cada carga.</p>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te ayuda a revisar tu Registro Social de Hogares, abrir tu cuenta de ahorro y postular a un subsidio.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://www.registrosocial.gob.cl" target="_blank" rel="noopener">Registro Social de Hogares</a> ·
+        <a href="https://www.chileatiende.gob.cl/fichas/43317" target="_blank" rel="noopener">ChileAtiende: Cartola Hogar</a> ·
+        <a href="https://www.minvu.gob.cl/noticia/minvu-anuncia-la-apertura-del-primer-llamado-de-2026-al-subsidio-para-sectores-medios/" target="_blank" rel="noopener">Minvu: subsidio DS1 2026</a> ·
+        <a href="https://territoriociudadano.minvu.gob.cl/sites/default/files/2026-07/Material%20informativo_Subsidio%20Arriendo.pdf" target="_blank" rel="noopener">Minvu: subsidio de arriendo 2026</a> ·
+        <a href="https://previsionsocial.gob.cl/wp-content/uploads/2026/05/05-FICHA-ASIGNACION-FAMILIAR-Y-MATERNAL.pdf" target="_blank" rel="noopener">Previsión Social: asignación familiar y Bono Marzo</a><br>
+        Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/vivienda-beneficios.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+        <li id="finanzas-personales"><details>
+          <summary><span class="num">10</span><span><span class="t">Finanzas personales</span><span class="d">Orientación sobre endeudamiento y presupuesto familiar.</span></span><span class="ico" aria-hidden="true"></span></summary>
+          <div class="cuerpo guia">
+      <p class="bajada">Ordenar la plata del mes y no endeudarse de más ayuda a vivir más tranquilo. Si ya tienes deudas, hay salidas gratuitas.</p>
+
+      <div class="paso">
+        <h2>1. Haz tu presupuesto del mes</h2>
+        <ul>
+          <li>Anota lo que te entra (sueldo líquido, asignación familiar, otros ingresos).</li>
+          <li>Anota lo que gastas: primero lo básico (arriendo, comida, luz, agua, transporte), después las cuotas y al final lo demás.</li>
+          <li>Si gastas más de lo que te entra, busca qué recortar antes de pedir un crédito.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>2. Antes de pedir un crédito</h2>
+        <ul>
+          <li>Compara el <strong>costo total del crédito</strong> y la <strong>CAE</strong> (carga anual equivalente), no solo la cuota.</li>
+          <li>Suma todas tus cuotas: si se llevan una parte grande de tu sueldo, es una señal de alerta.</li>
+          <li>En la Caja de Compensación, la cuota que te descuentan del sueldo no puede pasar del <span class="dato">25%</span> de tu sueldo líquido.</li>
+        </ul>
+      </div>
+
+      <div class="paso">
+        <h2>3. Si ya no puedes pagar</h2>
+        <p>No esperes a que la deuda crezca. Llama a quien le debes y pide repactar. Si tienes <strong>2 o más deudas</strong> atrasadas más de <span class="dato">90 días</span> que sumen más de <span class="dato">80 UF</span>, puedes pedir la <strong>Renegociación</strong> en la Superintendencia de Insolvencia (Superir). Es <strong>gratis</strong> y no necesitas abogado.</p>
+      </div>
+
+      <div class="paso">
+        <h2>4. Cobranzas abusivas</h2>
+        <p>Las empresas de cobranza tienen límites que fija la ley. Si te llaman demasiado, te amenazan o te tratan mal, reclama en el <a href="https://www.sernac.cl" target="_blank" rel="noopener">Sernac</a>.</p>
+      </div>
+
+      <div class="paso">
+        <h2>5. Revisa si estás recibiendo todo</h2>
+        <p>A veces el problema no es solo gastar menos, sino recibir lo que te corresponde: asignación familiar, bonos del Estado o beneficios de la Caja. Revisa las otras guías.</p>
+      </div>
+
+      <div class="ayuda"><strong>¿Tienes dudas?</strong> Conversa con la asistente social de tu empresa. Te ayuda a armar tu presupuesto y a revisar alternativas para tus deudas, con total reserva.</div>
+
+      <p class="nota"><strong>Fuentes oficiales:</strong>
+        <a href="https://www.chileatiende.gob.cl/fichas/37401" target="_blank" rel="noopener">ChileAtiende: renegociación de deudas (Superir)</a> ·
+        <a href="https://www.suseso.gob.cl/606/w3-propertyvalue-584.html" target="_blank" rel="noopener">SUSESO: crédito social y tope de descuento</a> ·
+        <a href="https://www.sernac.cl/cobranza-extrajudicial/" target="_blank" rel="noopener">Sernac: cobranza extrajudicial</a><br>
+        Información revisada el 5 de noviembre de 2026.</p>
+            <p class="nota"><a href="guias/finanzas-personales.html">Abrir esta guía en una página aparte</a></p>
+          </div>
+        </details></li>
+      </ol>
     </div>
   </section>
 
-  <section id="preguntas">
-    <div class="wrap">
-      <h2>Preguntas frecuentes</h2>
-      <details><summary>¿La App reemplaza la atención de un asistente social?</summary><p>No. Detrás de la App hay profesionales reales: asistentes sociales y psicólogas o psicólogos con experiencia en empresas. La App es el canal para que te contactes con ellas cuando lo necesites.</p></details>
-      <details><summary>¿Lo que le cuento a la asistente social se lo informa a mi jefatura?</summary><p>Tu consulta se trata con reserva. Los reportes que recibe la empresa muestran solo cifras generales, sin el detalle de cada caso. Pero si buscas una solución, muchas veces la asistente social necesitará coordinarse con Personas o con tu jefatura, y lo conversará contigo antes. Si se trata de una denuncia por Ley Karin, el procedimiento obliga a informar por escrito a ambas partes involucradas.</p></details>
-      <details><summary>¿En qué se diferencia de la asistente social de la municipalidad?</summary><p>La asistente social de la municipalidad atiende a vecinas y vecinos de la comuna. La de la empresa atiende a quienes trabajan en ella y a sus familias, en temas laborales, previsionales, de salud y de beneficios.</p></details>
-      <details><summary>¿Mis datos están protegidos?</summary><p>Sí. Mi Asistente Social cumple la Ley 21.719 de protección de datos personales, y la empresa no tiene acceso a tus consultas.</p></details>
-      <details><summary>¿La información tiene costo?</summary><p>No. Es un beneficio que paga tu empresa, sin costo para ti.</p></details>
+  <section class="section section--soft" id="preguntas">
+    <div class="wrap narrow">
+      <span class="eyebrow">Preguntas frecuentes</span>
+      <h2>Lo que más nos preguntan</h2>
+      <div class="faq">
+        <details><summary>¿La App reemplaza la atención de un asistente social?</summary><p>No. Detrás de la App hay profesionales reales: asistentes sociales y psicólogas o psicólogos con experiencia en empresas. La App es el canal para que te contactes con ellas cuando lo necesites.</p></details><details><summary>¿Lo que le cuento a la asistente social se lo informa a mi jefatura?</summary><p>Tu consulta se trata con reserva. Los reportes que recibe la empresa muestran solo cifras generales, sin el detalle de cada caso. Pero si buscas una solución, muchas veces la asistente social necesitará coordinarse con Personas o con tu jefatura, y lo conversará contigo antes. Si se trata de una denuncia por Ley Karin, el procedimiento obliga a informar por escrito a ambas partes involucradas.</p></details><details><summary>¿En qué se diferencia de la asistente social de la municipalidad?</summary><p>La asistente social de la municipalidad atiende a vecinas y vecinos de la comuna. La de la empresa atiende a quienes trabajan en ella y a sus familias, en temas laborales, previsionales, de salud y de beneficios.</p></details><details><summary>¿Mis datos están protegidos?</summary><p>Sí. Mi Asistente Social cumple la Ley 21.719 de protección de datos personales, y la empresa no tiene acceso a tus consultas.</p></details><details><summary>¿La información tiene costo?</summary><p>No. Es un beneficio que paga tu empresa, sin costo para ti.</p></details>
+      </div>
     </div>
   </section>
 
-  <section>
+  <section class="section">
     <div class="wrap">
-      <h2>Fuentes oficiales</h2>
+      <span class="eyebrow">Fuentes oficiales</span>
+      <h2>De dónde sale la información</h2>
       <ul class="fuentes">
         <li><a href="https://www.chileatiende.gob.cl" target="_blank" rel="noopener">ChileAtiende</a>: guía de trámites y beneficios del Estado.</li>
         <li><a href="https://www.registrosocial.gob.cl" target="_blank" rel="noopener">Registro Social de Hogares</a> (Ministerio de Desarrollo Social y Familia).</li>
@@ -191,23 +652,47 @@
     </div>
   </section>
 
-  <section id="contacto">
+  <section class="section section--soft" id="contacto">
     <div class="wrap">
-      <h2>Contacto</h2>
-      <p>Mi Asistente Social es una App de HR Consultores. Escríbenos o llámanos:</p>
-      <div class="grid">
-        <div class="card"><h3>Correo</h3><p><a href="mailto:consultores@hr.cl">consultores@hr.cl</a></p></div>
-        <div class="card"><h3>Teléfono</h3><p><a href="tel:+56998735037">+56 9 9873 5037</a></p></div>
-        <div class="card"><h3>WhatsApp</h3><p><a href="https://wa.me/56998735037" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></p></div>
-        <div class="card"><h3>Oficina</h3><p>Av. Kennedy 5600, Oficina 507, Vitacura, Santiago</p></div>
-        <div class="card"><h3>LinkedIn</h3><p><a href="https://www.linkedin.com/company/hr-cl" target="_blank" rel="noopener">HR Consultores</a></p></div>
-      </div>
+      <span class="eyebrow">Contacto</span>
+      <h2>Conversemos</h2>
+      <p class="lead">Mi Asistente Social es una App de HR Consultores. Escríbenos o llámanos.</p>
+      <ul class="contacto">
+        <li><b>Correo</b><a href="mailto:consultores@hr.cl">consultores@hr.cl</a></li>
+        <li><b>Teléfono</b><a href="tel:+56998735037">+56 9 9873 5037</a></li>
+        <li><b>WhatsApp</b><a href="https://wa.me/56998735037" target="_blank" rel="noopener">Escríbenos por WhatsApp</a></li>
+        <li><b>Oficina</b>Av. Kennedy 5600, Oficina 507, Vitacura, Santiago</li>
+        <li><b>LinkedIn</b><a href="https://www.linkedin.com/company/hr-cl" target="_blank" rel="noopener">HR Consultores</a></li>
+      </ul>
     </div>
   </section>
 </main>
 
-<footer>
-  <div class="wrap">© 2026 Mi Asistente Social, una App de HR Consultores · miasistentesocial.cl</div>
+<footer class="site-footer">
+  <div class="wrap cols">
+    <div>
+      <a href="./" class="brand"><img src="img/logo-hr.svg" alt="HR.cl" width="106" height="50"><span class="word">Mi Asistente<br>Social</span></a>
+      <p style="margin-top:16px;max-width:320px">Atención social para las personas que trabajan en tu empresa y sus familias. Una App de HR Consultores.</p>
+    </div>
+    <div>
+      <h2>Sitio</h2>
+      <ul><li><a href="#rol">AS en la empresa</a></li><li><a href="#app">La App</a></li><li><a href="#guias">Guías</a></li><li><a href="#preguntas">Preguntas frecuentes</a></li></ul>
+    </div>
+    <div>
+      <h2>Contacto</h2>
+      <ul><li><a href="mailto:consultores@hr.cl">consultores@hr.cl</a></li><li><a href="tel:+56998735037">+56 9 9873 5037</a></li><li>Av. Kennedy 5600, Oficina 507, Vitacura, Santiago</li><li><a href="https://www.linkedin.com/company/hr-cl" target="_blank" rel="noopener">LinkedIn</a> · <a href="https://wa.me/56998735037" target="_blank" rel="noopener">WhatsApp</a></li></ul>
+    </div>
+  </div>
+  <div class="wrap legal">© 2026 Mi Asistente Social, una App de HR Consultores · miasistentesocial.cl</div>
 </footer>
+<script>
+  (function(){var b=document.querySelector('.menu-btn'),m=document.getElementById('menu');if(!b||!m)return;
+  b.addEventListener('click',function(){var o=b.getAttribute('aria-expanded')==='true';b.setAttribute('aria-expanded',String(!o));m.classList.toggle('open',!o);});
+  m.addEventListener('click',function(e){if(e.target.closest('a')){b.setAttribute('aria-expanded','false');m.classList.remove('open');}});})();
+</script>
+<script>
+  // Abrir la guía si llegan con #slug en la dirección
+  (function(){var h=location.hash.slice(1);if(!h)return;var li=document.getElementById(h);if(li){var d=li.querySelector('details');if(d)d.open=true;}})();
+</script>
 </body>
 </html>

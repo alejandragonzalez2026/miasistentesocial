@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="400 262 748 352" role="img" aria-label="HR.cl">
+  <path fill="#A8AAAD" d="M408 323H480V448H578V323H650V605H578V517H480V605H408Z"/>
+  <path fill="#BCBEC0" fill-rule="evenodd" d="M663 323H795C855 323 892 362 892 428C892 476 868 510 836 525L897 605H817L764 535H735V605H663ZM735 392H790C810 392 822 404 822 420C822 436 810 448 790 448H735Z"/>
+  <path fill="#FBB040" d="M932 323L1097 272L986 532L914 520Z"/>
+  <circle cx="938" cy="560" r="49" fill="#FBB040" stroke="#fff" stroke-width="10"/>
+  <path fill="none" stroke="#D1D3D4" stroke-width="24" d="M1056 538A33 33 0 1 0 1056 586"/>
+  <path fill="#DCDCDC" d="M1078 520H1102V583H1139V605H1078Z"/>
+</svg>
