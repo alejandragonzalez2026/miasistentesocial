@@ -200,3 +200,13 @@ details.sub .sub-body > p:first-child { margin-top: 0; }
 .arbol details.sub > summary { padding: 14px 0; }
 .arbol details.sub[open] > summary { color: var(--accent); }
 .arbol details.sub .sub-body { padding: 0 0 16px; border-bottom: 1px dashed var(--line); margin-bottom: 4px; }
+
+/* Lista simple de guías (estilo listado) */
+.lista-guias { border: 1px solid #c9ced4; border-radius: 6px; padding: 8px 28px 20px; max-width: 860px; }
+.lista-guias .grupo { display: inline-block; background: var(--soft); font: 600 1.05rem/1.2 var(--sans); color: var(--ink); padding: 10px 14px; margin: 20px 0 6px; }
+.lista-guias ul { margin: 0; padding-left: 1.2em; }
+.lista-guias li { padding: 7px 0; font-size: 1.08rem; line-height: 1.45; }
+.lista-guias li::marker { color: var(--ink); }
+.lista-guias a { color: #1f4e8c; text-decoration: underline; text-underline-offset: 3px; }
+.lista-guias a:hover { color: var(--ink); }
+@media (max-width: 620px) { .lista-guias { padding: 4px 18px 16px; } }
