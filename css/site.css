@@ -42,12 +42,12 @@ p { margin: 0 0 1em; }
 
 /* Encabezado */
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
-.bar { display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 16px; }
+.bar { display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 40px; }
 .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); }
-.word { font: 700 1.75rem/1.05 var(--serif); letter-spacing: -0.01em; color: var(--ink); white-space: nowrap; }
+.word { font: 700 1.55rem/1.05 var(--serif); letter-spacing: -0.01em; color: var(--ink); white-space: nowrap; }
 .word br { display: none; }
 .menu { display: flex; align-items: center; gap: 28px; }
-.menu ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
+.menu ul { display: flex; gap: 20px; list-style: none; margin: 0; padding: 0; }
 .menu ul a { white-space: nowrap; text-decoration: none; font-size: 0.95rem; color: var(--text); padding: 6px 0; border-bottom: 1px solid transparent; }
 .menu ul a:hover { color: var(--ink); border-bottom-color: var(--ink); }
 .menu .btn { padding: 0.85em 1.3em; }
@@ -61,7 +61,7 @@ p { margin: 0 0 1em; }
 .bars::before { top: -7px; }
 .bars::after { top: 7px; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
-@media (max-width: 1080px) {
+@media (max-width: 1320px) {
   .bar { height: 72px; }
   .word { font-size: 1.7rem; white-space: normal; }
   .word br { display: inline; }
