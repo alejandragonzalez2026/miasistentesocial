@@ -44,8 +44,8 @@ p { margin: 0 0 1em; }
 .site-header { position: sticky; top: 0; z-index: 50; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); }
 .bar { display: flex; align-items: center; justify-content: space-between; height: 84px; gap: 16px; }
 .brand { display: flex; align-items: center; gap: 14px; text-decoration: none; color: var(--ink); }
-.brand img { width: 100px; height: auto; }
-.word { font: 500 0.74rem/1.3 var(--sans); letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.word { font: 700 1.75rem/1.05 var(--serif); letter-spacing: -0.01em; color: var(--ink); white-space: nowrap; }
+.word br { display: none; }
 .menu { display: flex; align-items: center; gap: 28px; }
 .menu ul { display: flex; gap: 24px; list-style: none; margin: 0; padding: 0; }
 .menu ul a { white-space: nowrap; text-decoration: none; font-size: 0.95rem; color: var(--text); padding: 6px 0; border-bottom: 1px solid transparent; }
@@ -63,7 +63,8 @@ p { margin: 0 0 1em; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
 @media (max-width: 1080px) {
   .bar { height: 72px; }
-  .brand img { width: 84px; }
+  .word { font-size: 1.7rem; white-space: normal; }
+  .word br { display: inline; }
   .wa--bar, .menu-btn { display: inline-flex; align-items: center; justify-content: center; }
   .wa--menu { display: none; }
   .menu { display: none; position: absolute; top: 72px; left: 0; right: 0; background: #fff; border-bottom: 1px solid var(--line); flex-direction: column; align-items: stretch; gap: 0; padding: 8px var(--gutter) 24px; }
@@ -72,7 +73,7 @@ p { margin: 0 0 1em; }
   .menu ul a { display: block; padding: 14px 0; border-bottom: 1px solid var(--line); font-size: 1.05rem; }
   .menu .btn { margin-top: 20px; justify-content: center; }
 }
-@media (max-width: 420px) { .word { font-size: 0.66rem; letter-spacing: 0.14em; } }
+@media (max-width: 420px) { .word { font-size: 1.6rem; } }
 
 /* Portada */
 .photo-band { height: clamp(220px, 32vw, 420px); background-size: cover; background-repeat: no-repeat; background-color: var(--soft); border-bottom: 1px solid var(--line); }
@@ -159,8 +160,7 @@ blockquote a, .prose a, .guia a { color: var(--accent); }
 .site-footer { background: var(--dark); color: #aab3bb; padding: 56px 0 28px; font-size: 0.92rem; }
 .site-footer .cols { display: grid; grid-template-columns: 1.4fr 1fr 1.2fr; gap: 40px; }
 .site-footer .brand { color: #fff; }
-.site-footer .brand img { width: 90px; }
-.site-footer .word { color: #aab3bb; }
+.site-footer .word { color: #fff; white-space: normal; }
 .site-footer h2 { font: 600 0.75rem/1 var(--sans); letter-spacing: 0.14em; text-transform: uppercase; color: #fff; margin-bottom: 16px; }
 .site-footer ul { list-style: none; padding: 0; margin: 0; }
 .site-footer li { margin-bottom: 10px; }
