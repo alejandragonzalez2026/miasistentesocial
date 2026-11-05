@@ -192,3 +192,11 @@ details.sub > summary::after { content: '+'; flex: none; width: 26px; height: 26
 details.sub[open] > summary::after { content: '−'; background: var(--brand); border-color: var(--brand); }
 details.sub .sub-body { padding: 0 0 16px; }
 details.sub .sub-body > p:first-child { margin-top: 0; }
+
+/* Árbol de beneficios */
+.arbol { margin: 4px 0 24px 10px; border-left: 2px solid #d6d9dd; padding-left: 0; }
+.arbol details.sub, .arbol details.sub:first-of-type { border: 0; position: relative; padding-left: 22px; }
+.arbol details.sub::before { content: ''; position: absolute; left: 0; top: 27px; width: 16px; border-top: 2px solid #d6d9dd; }
+.arbol details.sub > summary { padding: 14px 0; }
+.arbol details.sub[open] > summary { color: var(--accent); }
+.arbol details.sub .sub-body { padding: 0 0 16px; border-bottom: 1px dashed var(--line); margin-bottom: 4px; }
