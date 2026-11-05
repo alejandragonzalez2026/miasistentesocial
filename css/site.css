@@ -182,3 +182,13 @@ blockquote a, .prose a, .guia a { color: var(--accent); }
 .h1-bandera { display: flex; flex-direction: column; align-items: flex-start; gap: 14px; }
 .h1-bandera .bandera { width: 48px; height: 32px; }
 @media (max-width: 640px) { .guias > li.especial { padding: 0 12px; } .guias .especial .cuerpo { padding-left: 0; } .guias .especial .bandera { width: 30px; height: 20px; } }
+
+/* Beneficios desplegables dentro de la guía especial */
+details.sub { border-bottom: 1px solid var(--line); }
+details.sub:first-of-type { border-top: 1px solid var(--line); }
+details.sub > summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 16px 0; font-weight: 600; color: var(--ink); font-size: 1.02rem; }
+details.sub > summary::-webkit-details-marker { display: none; }
+details.sub > summary::after { content: '+'; flex: none; width: 26px; height: 26px; border: 1px solid var(--line); border-radius: 50%; display: grid; place-items: center; font-weight: 400; color: var(--ink); background: #fff; }
+details.sub[open] > summary::after { content: '−'; background: var(--brand); border-color: var(--brand); }
+details.sub .sub-body { padding: 0 0 16px; }
+details.sub .sub-body > p:first-child { margin-top: 0; }
